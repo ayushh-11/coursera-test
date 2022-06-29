@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+var str="lets learn javasript learn"
+console.log(str)
+
+
+var pos=str.indexOf('learn')/*indexof gives the postitional value of first occuring string*/
+console.log(pos)
+
+
+
+/*str.lastindexof gives the position value of last occuring str*/
+var poss=str.lastIndexOf('learn')
+console.log("last occuring position "+(poss))
+
+
+var posss=str.slice(11,20)//*gives value from starting to ending point [12is starting point and 20 is ending point]
+//.substring can be used too but slice accepts negative number too
+console.log("string from 12-20 is "+(posss))
+
+
+var possss=str.substr(0,4)/*0 is the starting value where as 4 is the length of the string to be given*/
+console.log("string starting from 0 having length 4 is "+(possss))
+
+
+var replaced=str.replace('lets', 'shall we') //*replace and give value where lets is replaced by shall we*//
+console.log(replaced)
+
+
+console.log(str.toUpperCase()) ///*touppercase converts string fron str into capital letters*/
+console.log(str.toLowerCase()) //*tolowercase convert string from sring into small letters*/
+
+
+var add=str.concat(' okeyyyyy') //add okeyyyy to str sting concat concat concat
+console.log(add)
+
+
+var space="      this is    a         fish"
+console.log(space);
+console.log(space.trim()); //trim remove spaces from start and end
+
+
+console.log(space.charAt(8)) //char at 8 gives the character at position 8
+    </script>
+</body>
+</html>
